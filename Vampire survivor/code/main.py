@@ -1,5 +1,7 @@
 import pygame.mixer
 from pygame import FULLSCREEN
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 from settings import *
 from player import Player
