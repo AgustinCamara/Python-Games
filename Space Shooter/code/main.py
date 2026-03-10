@@ -1,11 +1,13 @@
 import pygame
 from os.path import join
 from random import randint, uniform
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__))) # Set the working directory to the script's directory, so we can run the game from any location
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, groups):
         super().__init__(groups)
-        self.image = pygame.image.load(join('images', 'player.png')).convert_alpha() # Use join to crossplatform
+        self.image = pygame.image.load(join('..', 'images', 'player.png')).convert_alpha() # Use join to crossplatform
         self.rect = self.image.get_frect(center = (WINDOW_WIDTH // 2, WINDOW_HEIGHT // 2)) # Could be any point of the rect
         self.direction = pygame.Vector2()
         self.speed = 300
@@ -126,17 +128,17 @@ running = True
 clock = pygame.time.Clock()
 
 # Imports
-star_surf = pygame.image.load(join('images', 'star.png')).convert_alpha() # Single import, more efficent
-meteor_surf = pygame.image.load(join('images', 'meteor.png')).convert_alpha()
-laser_surf = pygame.image.load(join('images', 'laser.png')).convert_alpha()
-explosion_frames = [pygame.image.load(join('images', 'explosion', f'{i}.png')).convert_alpha() for i in range(21)]
-font = pygame.font.Font(join('images', 'Oxanium-Bold.ttf'), 20)
+star_surf = pygame.image.load(join('..', 'images', 'star.png')).convert_alpha() # Single import, more efficent
+meteor_surf = pygame.image.load(join('..', 'images', 'meteor.png')).convert_alpha()
+laser_surf = pygame.image.load(join('..', 'images', 'laser.png')).convert_alpha()
+explosion_frames = [pygame.image.load(join('..', 'images', 'explosion', f'{i}.png')).convert_alpha() for i in range(21)]
+font = pygame.font.Font(join('..', 'images', 'Oxanium-Bold.ttf'), 20)
 
-laser_sound = pygame.mixer.Sound(join('audio', 'laser.wav'))
+laser_sound = pygame.mixer.Sound(join('..', 'audio', 'laser.wav'))
 laser_sound.set_volume(0.1)
-explosion_sound = pygame.mixer.Sound(join('audio', 'explosion.wav'))
+explosion_sound = pygame.mixer.Sound(join('..', 'audio', 'explosion.wav'))
 explosion_sound.set_volume(0.1)
-game_music = pygame.mixer.Sound(join('audio', 'game_music.wav'))
+game_music = pygame.mixer.Sound(join('..', 'audio', 'game_music.wav'))
 game_music.set_volume(0.1)
 game_music.play() # Specify the amounts loops it will play
 
