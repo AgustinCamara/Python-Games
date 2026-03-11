@@ -4,21 +4,6 @@ A collection of four games built from scratch with Python and Pygame, each demon
 
 ---
 
-## Table of Contents
-
-- [Games](#games)
-  - [Pong](#pong)
-  - [Space Shooter](#space-shooter)
-  - [Platformer](#platformer)
-  - [Vampire Survivor](#vampire-survivor)
-- [Technical Highlights](#technical-highlights)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [Requirements](#requirements)
-- [License](#license)
-
----
-
 ## Games
 
 ### Pong
@@ -146,40 +131,8 @@ Python-Games/
 
 ---
 
-## Getting Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/AgustinCamara/Python-Games.git
-   cd Python-Games
-   ```
-
-2. **Create a virtual environment and install dependencies:**
-   ```bash
-   python -m venv .venv
-   source .venv/bin/activate        # Linux / macOS
-   .venv\Scripts\activate           # Windows
-   pip install -r requirements.txt
-   ```
-
-3. **Run any game:**
-   ```bash
-   python Pong/code/main.py
-   python "Space Shooter/code/main.py"
-   python Platform/code/main.py
-   python "Vampire survivor/code/main.py"
-   ```
-
----
-
 ## Requirements
 
 - Python 3.10+
 - Pygame
 - pytmx (for Platformer and Vampire Survivor)
-
----
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
