@@ -83,17 +83,6 @@ Move through a large tile-based map using keyboard input while aiming and firing
 
 ---
 
-## Technical Highlights
-
-| Concept | Pong | Space Shooter | Platformer | Vampire Survivor |
-|---|---|---|---|---|
-| Map System | Fixed arena | Procedural | TMX Tiled | TMX Tiled |
-| Animation | Static sprites | Frame-based | Directional | Directional |
-| Collision | AABB | Pixel mask | AABB + mask | AABB + mask |
-| Camera | Fixed | Fixed | Player-centered | Player-centered |
-| Enemy AI | Ball tracking | Random spawn | Sine wave / Patrol | Chase player |
-| Audio | -- | BGM + SFX | BGM + SFX | BGM + SFX |
-
 **Patterns and architecture used across the projects:**
 - Delta-time movement for consistent physics regardless of frame rate
 - Custom `pygame.sprite.Group` subclasses with specialized draw logic (shadows, camera offset, depth sorting)
