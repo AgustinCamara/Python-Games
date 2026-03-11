@@ -83,15 +83,6 @@ Move through a large tile-based map using keyboard input while aiming and firing
 
 ---
 
-**Patterns and architecture used across the projects:**
-- Delta-time movement for consistent physics regardless of frame rate
-- Custom `pygame.sprite.Group` subclasses with specialized draw logic (shadows, camera offset, depth sorting)
-- Clean separation of concerns: settings, sprites, support utilities, and game controller classes
-- State machines for player animation and enemy death sequences
-- Batch asset loading from directory structures
-
----
-
 ## Project Structure
 
 ```
