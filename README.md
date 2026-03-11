@@ -32,7 +32,6 @@ A top-down survival shooter with procedurally spawned meteors, projectile combat
 Pilot a ship, dodge falling meteors, and destroy them with lasers. Score is based on survival time. Meteors spawn at increasing frequency from random screen positions.
 
 **Key Technical Features:**
-- 21-frame explosion sprite animation with interpolated frame timing
 - Continuous meteor rotation via `rotozoom` with cached original surfaces to prevent quality loss
 - Pixel-perfect collision detection using sprite masks
 - Custom Pygame timer events for periodic enemy spawning
@@ -59,7 +58,7 @@ Navigate a tile-based world loaded from a Tiled TMX map. Jump across platforms, 
 - Death animation using mask-based sprite silhouettes
 - Batch asset loading utilities for sprite folders and audio files
 
-**Controls:** Arrow keys to move, Up to jump, Space to shoot
+**Controls:** Arrow keys to move, Space to jump, S to shoot
 
 ---
 
